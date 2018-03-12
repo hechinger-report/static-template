@@ -1,0 +1,2 @@
+STATIC SITE TEMPLATE
+====================
