@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Graphics App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    {% block stylesheets %}{% endblock %}
+</head>
+<body class="post-template-default single single-post postid-39292 single-format-standard ">
+    <header class="site-header ">
+
+  <div class="l-nav-mod js-nav-mod">
+    <nav class="l-nav-wrap">
+
+      <a class="nav-logo-link" href="/">
+        <div class="nav-logo">
+          <h1 class="nav-site-h">
+            <img class="nav-logo-img" src="http://hechingerreport.org/wp-content/themes/hechinger/static/img/icons/hr-logo.svg" alt="The Hechinger Report">
+            <img class="nav-logo-img logo-fallback" src="/wp-content/themes/hechinger/static/img/icons/hr-logo.png" alt="The Hechinger Report">
+          </h1> <!-- /nav-site-h -->
+        </div> <!-- /nav-logo -->
+      </a> <!-- /nav-logo-link -->
+      <h2 class="nav-sub-h"><a class="nav-sub-h-link">Covering Innovation &amp; Inequality in Education</a></h2>
+
+      <div class="nav-item-wrap">
+        
+        <div class="nav-item nav-topics-menu-mod js-topics-trigger">
+          <a class="nav-topics-link" href="/special-reports">Topics</a>
+
+          <div class="nav-topics-menu">
+            <span class="nav-topics-menu-tick"></span>
+            <div class="nav-topics-menu-shadow">
+              <ul class="nav-topics-list">
+                                  <li class="nav-sub-item">
+                    <a class="nav-sub-item-link" href="http://hechingerreport.org/special-reports/future-of-learning/">Future of Learning</a>
+                  </li> <!-- /nav-sub-item -->
+                                  <li class="nav-sub-item">
+                    <a class="nav-sub-item-link" href="http://hechingerreport.org/special-reports/higher-education/">Higher Education</a>
+                  </li> <!-- /nav-sub-item -->
+                                  <li class="nav-sub-item">
+                    <a class="nav-sub-item-link" href="http://hechingerreport.org/special-reports/early-education/">Early Education</a>
+                  </li> <!-- /nav-sub-item -->
+                                  <li class="nav-sub-item">
+                    <a class="nav-sub-item-link" href="http://hechingerreport.org/special-reports/mississippi-learning/">Mississippi</a>
+                  </li> <!-- /nav-sub-item -->
+                                  <li class="nav-sub-item">
+                    <a class="nav-sub-item-link" href="http://hechingerreport.org/special-reports/new-orleans/">New Orleans</a>
+                  </li> <!-- /nav-sub-item -->
+                                <li class="nav-sub-item all-topics-item"><a class="nav-sub-item-link all-topics-link" href="/special-reports">All Topics</a></li>
+                <li class="nav-sub-item sub-about-item"><a class="nav-sub-item-link nav-sub-about" href="/about">About Hechinger</a></li>
+                <li class="nav-sub-item sub-donate-item"><a class="nav-sub-item-link nav-sub-donate" href="/donate">Donate</a></li>
+              </ul>
+            </div> <!-- /nav-topics-menu-shadow -->
+          </div> <!-- /nav-topics-menu -->
+        </div> <!-- /nav-topics-menu-mod -->
+
+        <a class="nav-item nav-about-link" href="/about">About</a>
+
+        <a class="nav-item nav-donate-link" href="/donate">Donate</a>
+
+        <a class="nav-item nav-search-button js-nav-search-button" href="/search">
+          <span class="nav-search-icon"></span>
+          <span class="nav-search-icon--reverse"></span>
+          <span class="nav-search-icon--close">&times;</span>
+        </a>
+      </div> <!-- /nav-item-wrap -->
+
+      <button class="nav-menu-button js-nav-menu-button">
+        <div class="nav-menu-mask">
+          <span class="nav-menu-close">
+            Close <span class="nav-menu-close-icon">&times;</span>
+          </span>
+          <span class="nav-menu">
+            Menu <span class="nav-menu-icon"></span>
+          </span>
+        </div>
+      </button>
+    </nav> <!-- /l-nav-wrap -->
+
+    <div class="search-form-wrap">
+      <form id="searchform" method="get" action="/index.php">
+        <input class="search-text-input" type="text" name="s" id="s" size="15" placeholder="Search" />
+        <button class="search-submit-button icon-search-reverse" type="submit" value=""><span class="icon"></span></button>
+      </form>
+    </div> <!-- /search-form-wrap -->
+
+  </div> <!-- /l-nav-mod -->
+</header> <!-- /site-header -->
+    <div class="content">
+      <div class="content-inner">
+        <h1>{% block headline %}{% endblock %}</h1>
+        <div class="byline">
+            by <b>{% block byline %}{% endblock %}</b>
+        </div>
+        <div class="pubdate">
+            {% block pubdate %}{% endblock %}
+        </div>
+    
+    {% block content %}{% endblock %}
+    {% block scripts %}{% endblock %}
+    <script src="scripts/main.js"></script>
+    </div>
+    </div>
+</body>
+</html>
